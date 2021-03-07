@@ -1,0 +1,60 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+$phone: "(min-width: 320px) and (max-width: 767px)";
+$tablet: "(min-width: 768px) and (max-width: 1023px)";
+$tabletDevice: "(min-device-width: 768px) and (max-device-width: 1023px)";
+$largeTablet: "(min-width: 1024px) and (max-width: 1365px)";
+$largeTabletDevice: "(min-device-width: 1024px) and (max-device-width: 1365px)";
+$laptop: "(min-width: 1366px) and (max-width: 1919px)";
+$desktop: "(min-width: 1920px)";
+
+// BEM Mixin
+@mixin e($element) {
+    &__#{$element} {
+        @content;
+    }
+  }
+  @mixin m($modifier) {
+    &--#{$modifier} {
+        @content;
+    }
+  }
+
+$poppins-light: 'Poppins Light', sans-serif, helvetica, arial;
+$poppins-reg: 'Poppins Regular', sans-serif, helvetica, arial;
+$poppins-med: 'Poppins Medium', sans-serif, helvetica, arial;
+$poppins-bold: 'Poppins Bold', sans-serif, helvetica, arial;
+
+$overlay: hsl(0, 100%, 74%);
+$cp-blue: #4a90e2;
+$font-black: #4a4a4a;
+$title-blue: #142a50;
+$hr-blue: #afd4ff;
+
+
+$top40Green: #7ed321;
+$top40Orange: #f5a623;
+$top40Red: #d0021b;
+
+$white: #ffffff;
+$light-gray: #989898;
+$medium-gray: #f7f7f7;
+$dark-gray: #858585;
+$extra-dark-gray: #4b4848;
+$green: green;
+$orange: #F5A623;
+$banner-green: #66bc46;
+$banner-yellow: #F5A623;
+$banner-red: #d5212f;
+$checkmark-color: #4a90e2;
+$black-color: #000000;
+
+
+.overlay {
+  position: fixed; 
+  width: 100%; 
+  height: 100%; 
+  background-color: $overlay; 
+  z-index: 2;
+  cursor: pointer; 
+}
