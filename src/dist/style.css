@@ -35,22 +35,6 @@ html {
     text-decoration: none;
   }
   
-  .flex {
-    display: flex;
-  }
-  
-  .flex-jc-sb {
-    justify-content: space-between;
-  }
-  
-  .flex-jc-c {
-    justify-content: center;
-  }
-  
-  .flex-ai-c {
-    align-items: center;
-  }
-  
   @media (max-width: 63.9375em) {
     .hide-for-mobile {
       display: none;
@@ -70,6 +54,7 @@ html {
   
   .copy h1 {
     font-size: 2rem;
+    font-weight: bold;
   }
   
   .copy p {
@@ -108,6 +93,7 @@ html {
   .col2__container {
     background-color: white;
     border-radius: 0.5rem;
+    padding-top: 15px;
   }
   
   .col2__container p {
@@ -291,42 +277,4 @@ html {
     }
   }
   
-  .Control-label--showPassword {
-    width: 32px;
-    position: relative;
-    top: 52px;
-    left: 100%;
-    text-align: right;
-    margin-left: -36px;
-    cursor: pointer;
-  }
   
-  .show-password {
-    display: none;
-  }
-  
-  .show-password:checked ~ .ControlInput--password {
-    -webkit-text-security: disc;
-    -moz-text-security: disc;
-  }
-  
-  .show-password:checked ~ .Control-label--showPassword .svg-toggle-password .closed-eye {
-    opacity: 1;
-    transition: opacity 300ms ease, height 400ms ease;
-    width: 4px;
-    height: 44px;
-  }
-  
-  .svg-toggle-password {
-    position: absolute;
-    top: -2.3rem;
-    right: -1.5rem;
-    fill: #b9b6d3;
-    z-index: 10;
-  }
-  
-  .svg-toggle-password .closed-eye {
-    opacity: 0;
-    height: 0;
-  }
-  /*# sourceMappingURL=style.css.map */

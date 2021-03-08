@@ -5,8 +5,8 @@ export class Text extends React.Component {
     render(){
         return(
             <>
-                <h1>Learn to code by watching others</h1>
-                <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+                <h1><strong>Your Health Screening is Completely Free. Sign Up Today</strong></h1>
+                <p>Project Health offers free biometric screenings worth over $100 in value to help identify chronic conditions before they become life-threatening illnesses.</p>
             </>
         )
     }

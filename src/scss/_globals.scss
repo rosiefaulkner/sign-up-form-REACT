@@ -33,24 +33,6 @@ html {
     text-decoration: none;
   }
   
-  //Flexbox
-  
-  .flex {
-    display: flex;
-  
-    &-jc-sb {
-      justify-content: space-between;
-    }
-  
-    &-jc-c {
-      justify-content: center;
-    }
-  
-    &-ai-c {
-      align-items: center;
-    }
-  }
-  
   //Visibility
   .hide-for-mobile {
     @include breakpoint-down(medium) {
