@@ -21,7 +21,7 @@ export class Form extends React.Component {
 
   render() {
     return (
-      <div id="Form">
+      <>
         <form id="form" onSubmit={this.handleSubmit}>
           <input
             id="firstNameInput"
@@ -50,7 +50,7 @@ export class Form extends React.Component {
           <input type="submit" value="Submit" />
         </form>
         <p>By clicking the button, you are agreeing to the <strong>Terms of Service</strong></p>
-      </div>
+        </>
     );
   }
 }

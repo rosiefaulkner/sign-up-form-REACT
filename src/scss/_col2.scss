@@ -1,0 +1,48 @@
+.col2 {
+    &__trybutton {
+      display: block;
+      text-align: center;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      background-color: $Blue;
+      color: $White;
+      font-weight: 400;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      outline: none;
+  
+      height: 6rem;
+      padding: 0 5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 0.5rem 0 0 hsl(0, 57%, 66%);
+      font-size: 1rem;
+      p {
+        line-height: 1.75;
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+    &__container {
+      background-color: $White;
+      border-radius: 0.5rem;
+  
+      p {
+        color: $GrayishBlue;
+        text-align: center;
+        font-size: 0.75rem;
+        line-height: 1.3rem;
+        padding-bottom: 2rem;
+        margin: 0;
+        width: 70%;
+        margin: auto;
+        a {
+          color: $Red;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  

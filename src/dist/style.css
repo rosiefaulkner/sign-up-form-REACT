@@ -1,0 +1,332 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 1.5rem;
+    line-height: 1.3;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    color: white;
+    background: center/cover repeat #ff7a7a url(../images/bg-intro-mobile.png);
+  }
+  
+  @media (min-width: 40em) {
+    body {
+      background: center/cover repeat #ff7a7a url(../images/bg-intro-desktop.png);
+    }
+  }
+  
+  a,
+  a:visited,
+  a:hover {
+    text-decoration: none;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .flex-jc-sb {
+    justify-content: space-between;
+  }
+  
+  .flex-jc-c {
+    justify-content: center;
+  }
+  
+  .flex-ai-c {
+    align-items: center;
+  }
+  
+  @media (max-width: 63.9375em) {
+    .hide-for-mobile {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 64em) {
+    .hide-for-desktop {
+      display: none;
+    }
+  }
+  
+  .copy {
+    padding: 3rem 0;
+    text-align: center;
+  }
+  
+  .copy h1 {
+    font-size: 2rem;
+  }
+  
+  .copy p {
+    font-size: 1.1rem;
+    line-height: 2;
+  }
+  
+  .col2__trybutton {
+    display: block;
+    text-align: center;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: #6055a5;
+    color: white;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    height: 6rem;
+    padding: 0 5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0.5rem 0 0 #da7777;
+    font-size: 1rem;
+  }
+  
+  .col2__trybutton p {
+    line-height: 1.75;
+  }
+  
+  .col2__trybutton p span {
+    font-weight: 700;
+  }
+  
+  .col2__container {
+    background-color: white;
+    border-radius: 0.5rem;
+  }
+  
+  .col2__container p {
+    color: #b9b6d3;
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 1.3rem;
+    padding-bottom: 2rem;
+    margin: 0;
+    width: 70%;
+    margin: auto;
+  }
+  
+  .col2__container p a {
+    color: #ff7a7a;
+    font-weight: 700;
+  }
+  
+  @media (max-width: 63.9375em) {
+    section {
+      max-width: 30rem;
+      margin: auto;
+      padding-bottom: 7rem;
+    }
+  }
+  
+  @media (min-width: 64em) {
+    section {
+      display: flex;
+    }
+    section .copy {
+      padding: 3rem;
+      flex: 1 0 0;
+      text-align: left;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      max-width: 50rem;
+    }
+    section .col2 {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      padding: 1rem;
+      flex: 1 0 0;
+      max-width: 45rem;
+    }
+    section .col2__trybutton {
+      width: 80%;
+      height: fit-content;
+      padding: 0 1rem;
+    }
+    section .col2__container {
+      width: 80%;
+    }
+  }
+  
+  .form {
+    padding: 2rem 2rem 0 2rem;
+  }
+  
+  .form__div {
+    position: relative;
+    height: 3.25rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: solid 1px #b9b6d3;
+    border-radius: 0.5rem;
+    box-shadow: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    padding: 1rem 1rem 1rem 3rem;
+    background: none;
+    z-index: 1;
+  }
+  
+  .form__input:focus {
+    border: solid 1px #38cc8c;
+  }
+  
+  .form__input:valid {
+    animation: fadeIn ease 1s;
+    
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: left 1rem top 50%;
+  }
+  
+  .form__input:invalid:not(:focus):not(:placeholder-shown) {
+    animation: fadeIn ease 1s;
+    background: url(../images/icon-error.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: left 1rem top 50%;
+  }
+  
+  .form__label {
+    color: #6055a5;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding: 0 0.25rem;
+    background-color: white;
+    transition: 300ms;
+  }
+  
+  .form__button {
+    display: block;
+    text-align: center;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: #6055a5;
+    color: white;
+    font-weight: 400;
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 4rem;
+    background-color: #38cc8c;
+    box-shadow: 0 0.3rem 0 0 #11ac69;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    padding-top: 0.5rem;
+    transition: background-color 200ms ease;
+  }
+  
+  .form__button:hover {
+    background-color: #86f3c4;
+  }
+  
+  .form__input:focus + .form__label {
+    top: -0.4rem;
+    left: 0.8rem;
+    color: #38cc8c;
+    font-size: 0.75rem;
+    z-index: 10;
+  }
+  
+  .form__input:not(:placeholder-shown).form__input:not(:focus) + .form__label {
+    top: -0.4rem;
+    left: 0.8rem;
+    font-size: 0.75rem;
+    z-index: 10;
+  }
+  
+  .form .requirements {
+    position: absolute;
+    top: 3.4rem;
+    right: 0;
+    padding-right: 0.1rem;
+    max-height: 0px;
+    transition: 0.28s;
+    overflow: hidden;
+    color: red;
+    font-style: italic;
+    font-size: 0.65rem;
+    text-align: right;
+  }
+  
+  .form__input:invalid:focus:not(:placeholder-shown) ~ .requirements {
+    max-height: 200px;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .Control-label--showPassword {
+    width: 32px;
+    position: relative;
+    top: 52px;
+    left: 100%;
+    text-align: right;
+    margin-left: -36px;
+    cursor: pointer;
+  }
+  
+  .show-password {
+    display: none;
+  }
+  
+  .show-password:checked ~ .ControlInput--password {
+    -webkit-text-security: disc;
+    -moz-text-security: disc;
+  }
+  
+  .show-password:checked ~ .Control-label--showPassword .svg-toggle-password .closed-eye {
+    opacity: 1;
+    transition: opacity 300ms ease, height 400ms ease;
+    width: 4px;
+    height: 44px;
+  }
+  
+  .svg-toggle-password {
+    position: absolute;
+    top: -2.3rem;
+    right: -1.5rem;
+    fill: #b9b6d3;
+    z-index: 10;
+  }
+  
+  .svg-toggle-password .closed-eye {
+    opacity: 0;
+    height: 0;
+  }
+  /*# sourceMappingURL=style.css.map */
