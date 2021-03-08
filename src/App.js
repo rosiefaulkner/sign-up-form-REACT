@@ -10,8 +10,8 @@ function App() {
       <Text />
       </div>
       <div class="col2">
-        <a class="col2__trybutton" href="#">
-          <p><span>Try it free 7 days</span> then 20&dollar;/mo. thereafter</p>
+        <a class="col2__trybutton" href="/">
+          <p><span>Schedule an Appointment</span> today after signing up</p>
         </a>
         <div class="col2__container">
       <Form />
