@@ -1,0 +1,128 @@
+.form {
+    padding: 2rem 2rem 0 2rem;
+    &__div {
+      position: relative;
+      height: 3.25rem;
+      margin-bottom: 1.5rem;
+    }
+    &__input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: solid 1px $GrayishBlue;
+      border-radius: 0.5rem;
+      box-shadow: none;
+      outline: none;
+      font-family: "Poppins", sans-serif;
+      padding: 1rem 1rem 1rem 3rem;
+      background: none;
+      z-index: 1;
+  
+      &:focus {
+        border: solid 1px $Green;
+      }
+  
+      &:valid {
+        animation: fadeIn ease 1s;
+        background: url(../../images/check.svg);
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: left 1rem top 50%;
+      }
+  
+      &:invalid:not(:focus):not(:placeholder-shown) {
+        animation: fadeIn ease 1s;
+        background: url(../../images/icon-error.svg);
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: left 1rem top 50%;
+      }
+    }
+  
+    &__label {
+      color: $Blue;
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      padding: 0 0.25rem;
+      background-color: $White;
+      transition: 300ms;
+    }
+  
+    &__button {
+      display: block;
+      text-align: center;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      background-color: $Blue;
+      color: $White;
+      font-weight: 400;
+      width: 100%;
+      border: none;
+      outline: none;
+      height: 4rem;
+      background-color: $Green;
+      box-shadow: 0 0.3rem 0 0 $ShadowGreen;
+      text-transform: uppercase;
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+      margin-top: 2rem;
+      padding-top: 0.5rem;
+      transition: background-color 200ms ease;
+      &:hover {
+        background-color: $LightGreen;
+      }
+    }
+  
+    &__input:focus + &__label {
+      top: -0.4rem;
+      left: 0.8rem;
+      color: $Green;
+      font-size: $Small-Font;
+      z-index: 10;
+    }
+  
+    &__input:not(:placeholder-shown).form__input:not(:focus) + &__label {
+      top: -0.4rem;
+      left: 0.8rem;
+      font-size: $Small-Font;
+      z-index: 10;
+    }
+  
+    .requirements {
+      position: absolute;
+      top: 3.4rem;
+      right: 0;
+      padding-right: 0.1rem;
+      max-height: 0px;
+      transition: 0.28s;
+      overflow: hidden;
+      color: red;
+      font-style: italic;
+      font-size: 0.65rem;
+      text-align: right;
+    }
+  
+    &__input:invalid:focus:not(:placeholder-shown) {
+      & ~ .requirements {
+        max-height: 200px;
+      }
+    }
+  
+    @include breakpoint-down(medium) {
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
