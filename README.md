@@ -9,9 +9,8 @@ Users are able to:
   - The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for this error should say *"Looks like this is not an email"*
 
 <strong>MOBILE VIEW:</strong><br><br>
-![mobile-design](https://user-images.githubusercontent.com/54520871/110273891-94521d80-7f9b-11eb-9e3d-3e3f7c273f86.jpg)
+<img width="494" alt="Screen Shot 2021-03-07 at 11 24 13 PM" src="https://user-images.githubusercontent.com/54520871/110274212-4b4e9900-7f9c-11eb-97f1-7bae5e185124.png">
 
 <strong>DESKTOP VIEWS:</strong><br><br>
-![desktop-preview](https://user-images.githubusercontent.com/54520871/110273892-94521d80-7f9b-11eb-9c41-e39e5899be74.jpg)<br><br>
-![desktop-design](https://user-images.githubusercontent.com/54520871/110273893-94eab400-7f9b-11eb-9602-2e24ea7f9afc.jpg)<br><br>
-![active-states](https://user-images.githubusercontent.com/54520871/110273894-94eab400-7f9b-11eb-9335-0a7d4c71ee5f.jpg)
+<img width="1673" alt="Screen Shot 2021-03-07 at 11 23 57 PM" src="https://user-images.githubusercontent.com/54520871/110274224-53a6d400-7f9c-11eb-9a63-07175b5d6b7e.png">
+
