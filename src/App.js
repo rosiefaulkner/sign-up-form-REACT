@@ -11,7 +11,7 @@ function App() {
       </div>
       <div class="col2">
         <a class="col2__trybutton" href="/">
-          <p><span>Schedule an Appointment</span> today after signing up</p>
+          <p><span>Congratulations!</span> You're on the road to health!</p>
         </a>
         <div class="col2__container">
       <Form />
