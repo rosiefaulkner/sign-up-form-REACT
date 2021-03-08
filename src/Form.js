@@ -9,6 +9,7 @@ const emptyForm = {
 
 export class Form extends React.Component {
   state = {};
+
   componentDidMount() {
     this.setState(emptyForm);
   }

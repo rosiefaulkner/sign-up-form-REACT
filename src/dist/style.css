@@ -10,6 +10,7 @@ html {
   }
   
   body {
+    padding-top: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,6 +118,7 @@ html {
       max-width: 30rem;
       margin: auto;
       padding-bottom: 7rem;
+      padding-top: 65%;
     }
   }
   
